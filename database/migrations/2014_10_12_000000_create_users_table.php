@@ -20,9 +20,6 @@ return new class extends Migration
             $table->binary('ID_frontface');
             $table->binary('ID_backface');
             $table->binary('restaurents_image');
-
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

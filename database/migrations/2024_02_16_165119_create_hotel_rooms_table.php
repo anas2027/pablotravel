@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('desctpion');
-            $table->integer('pesone_count');
+            $table->integer('persone_count');
             $table->integer('Rate');
             $table->double('rent_perday');
-            $table->binary('romm_image');
+            $table->binary('room_image');
             $table->unsignedBigInteger('hotel_id');
             $table->foreign('hotel_id')->references('id')->on('hotel')->onDelete('cascade');;
 
